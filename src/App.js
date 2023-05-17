@@ -8,6 +8,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ListBooks from './components/ListBooks';
 import AddNewBook from './components/AddNewBook';
+import Categories from './components/Categories';
 
 const App = () => (
   <BrowserRouter>
@@ -20,9 +21,9 @@ const App = () => (
               <ListBooks />
               <AddNewBook />
             </>
-        )}
+          )}
         />
-        <Route path="categories" element={<div>Coming soon... categories</div>} />
+        <Route path="categories" element={<Categories />} />
       </Route>
     </Routes>
   </BrowserRouter>
