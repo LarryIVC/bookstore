@@ -42,7 +42,6 @@ const ListBooks = () => {
           chapter={itemBook.chapter}
         />
       ))}
-      ;
     </div>
   );
 };
