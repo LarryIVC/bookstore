@@ -4,7 +4,7 @@ import Book from './Book';
 const ListBooks = () => {
   const listBook = [
     {
-      key: 1,
+      id: 1,
       category: 'Action',
       title: 'The Hunger Games',
       author: 'Suzanne Collins',
@@ -12,7 +12,7 @@ const ListBooks = () => {
       chapter: 'Chapter 17',
     },
     {
-      key: 2,
+      id: 2,
       category: 'Science Fiction',
       title: 'Dune',
       author: 'Frank Herbert',
@@ -20,7 +20,7 @@ const ListBooks = () => {
       chapter: 'Chapter 3: "A Lesson Learned"',
     },
     {
-      key: 3,
+      id: 3,
       category: 'Economy',
       title: 'Capital in the Twenty-First Century',
       author: 'Suzanne Collins',
@@ -33,7 +33,8 @@ const ListBooks = () => {
     <div>
       {listBook.map((itemBook) => (
         <Book
-          key={itemBook.key}
+          key={itemBook.id}
+          id={itemBook.id}
           category={itemBook.category}
           title={itemBook.title}
           author={itemBook.author}
