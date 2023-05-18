@@ -17,14 +17,13 @@
 }
 
 h1 {
-  
   font-size: 1.87rem;
   font-weight: bold;
   color: #0290ff;
 }
 
 .menu {
-  display:flex;
+  display: flex;
   flex-direction: row;
   gap: 2.56rem;
 }
@@ -47,7 +46,7 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 1.813rem;
-  height: 1.813rem; 
+  height: 1.813rem;
   padding: 0.875rem;
   border: solid 1px #e8e8e8;
   border-radius: 50%;
