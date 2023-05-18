@@ -1,0 +1,59 @@
+.header {
+  font-family: 'Monserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.93rem;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 1.87rem;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2.56rem;
+}
+
+.menuItem {
+  text-decoration: none;
+  font-size: 0.81rem;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuItem:hover {
+  color: #12121250;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.813rem;
+  height: 1.813rem;
+  padding: 0.875rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+}
+
+.login {
+  font-size: 1.2rem;
+  color: #0290ff;
+  cursor: pointer;
+}

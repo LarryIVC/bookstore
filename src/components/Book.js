@@ -2,14 +2,10 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
 
-const Book = ({
-  id,
-  category,
-  title,
-  author,
-  progress,
-  chapter,
-}) => {
+const Book = ({ data }) => {
+  const {
+    itemId, category, title, author,
+  } = data;
   const dispatch = useDispatch();
   return (
     <>
@@ -25,20 +21,20 @@ const Book = ({
           </button>
           <button
             type="button"
-            onClick={() => dispatch(removeBook(id))}
+            onClick={() => dispatch(removeBook(itemId))}
           >
             Remove
           </button>
           <button type="button">Edit</button>
         </div>
         <div>
-          <p>{progress}</p>
+          <p>60</p>
           <p>Completed</p>
         </div>
 
         <div>
           <h3>CURRENT CHAPTER</h3>
-          <p>{chapter}</p>
+          <p>Chapter x</p>
           <button type="button">UPDATE PROGRESS</button>
         </div>
       </div>
@@ -47,12 +43,12 @@ const Book = ({
 };
 
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
-  category: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  chapter: PropTypes.string.isRequired,
-  progress: PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    itemId: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Book;
