@@ -44,7 +44,8 @@ export const booksSlice = createSlice({
         state.books = action.payload;
       })
       .addCase(addBook.fulfilled, (state, action) => {
-        state.books.push(action.payload);
+        // state.books.push(action.payload);
+        state.books = state.books.concat(action.payload);
       })
       .addCase(removeBook.fulfilled, (state, action) => {
         state.books = state.books.filter((book) => book.item_id !== action.payload.item_id);

@@ -9,8 +9,8 @@ const NavBar = () => (
       <div className="navigator">
         <h1 className="logo">Bookstore CMS</h1>
         <nav className="menu">
-          <Link className="menuItem" to="/">Books</Link>
-          <Link className="menuItem" to="/categories">Categories</Link>
+          <Link className="menuItem" to="/">BOOKS</Link>
+          <Link className="menuItem" to="/categories">CATEGORIES</Link>
         </nav>
       </div>
       <div className="circle">

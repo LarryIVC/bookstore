@@ -22,17 +22,22 @@ const AddNewBook = () => {
 
   return (
     <div className="new-book">
-      <p>ADD NEW BOOK</p>
+      <h2 className="new-title">ADD NEW BOOK</h2>
       <form className="frm-new-book" onSubmit={(e) => handleSubmit(e)}>
-        <input name="title" type="text" placeholder="Book title" />
-        <input name="author" type="text" placeholder="Author Book" />
-        <select id="categories">
+        <input className="input" name="title" type="text" placeholder="Book title" />
+        <input className="input" name="author" type="text" placeholder="Author Book" />
+        <select className="input dark" name="categories">
           <option value="Category">Category</option>
           <option value="Action">Action</option>
           <option value="Science Fiction">Science Fiction</option>
           <option value="Economy">Economy</option>
         </select>
-        <button type="submit">ADD BOOK</button>
+        <button
+          className="btn-updt"
+          type="submit"
+        >
+          ADD BOOK
+        </button>
       </form>
     </div>
   );
