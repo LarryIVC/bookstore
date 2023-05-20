@@ -1,11 +1,18 @@
+.pageContainer {
+  margin: 9.313rem 6.25rem;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+  border-radius: 4px;
+}
 .header {
   font-family: 'Monserrat', sans-serif;
   display: flex;
   flex-direction: row;
-  width: 100%;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  padding: 1.813rem 6.25rem;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .navigator {
@@ -29,8 +36,9 @@ h1 {
 }
 
 .menuItem {
+  font-family: 'Montserrat-Regular', sans-serif;
   text-decoration: none;
-  font-size: 0.81rem;
+  font-size: 0.813rem;
   font-weight: normal;
   letter-spacing: 1.9px;
   color: #121212;
@@ -45,8 +53,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.813rem;
-  height: 1.813rem;
   padding: 0.875rem;
   border: solid 1px #e8e8e8;
   border-radius: 50%;
