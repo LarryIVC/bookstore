@@ -8,7 +8,7 @@ const Categories = () => {
   return (
     <div>
       <h3>Coming soon... categories</h3>
-      <h3>{status}</h3>
+      <h2>{status}</h2>
     </div>
   );
 };

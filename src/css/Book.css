@@ -1,0 +1,9 @@
+.book {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 1px inset;
+  padding: 5px;
+}

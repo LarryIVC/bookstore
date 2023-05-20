@@ -1,0 +1,14 @@
+.new-book {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: inset 0 0 1px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.frm-new-book {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
