@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 5rem;  
+  margin-bottom: 5rem;
 }
 
 .new-title {
@@ -27,7 +27,6 @@
 .input {
   border: solid 1px #e8e8e8;
   padding: 0.813rem 0.813rem 0.813rem 1.063rem;
-  width: 17rem;
   letter-spacing: -0.15px;
   color: #c4c4c4;
   width: 25%;
