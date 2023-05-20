@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.cnt-book-left{
+.cnt-book-left {
   width: 50%;
 }
 
@@ -84,22 +84,21 @@
 .txt-pcnt {
   font-size: 2rem;
   color: #121212;
-  padding-bottom: 0.187rem;  
+  padding-bottom: 0.187rem;
 }
 
-.completed{
+.completed {
   font-size: 0.875rem;
   color: #12121280;
 }
 
 .chapter {
   font-family: 'Roboto Slab', serif;
-  font-size: 0.813;
+  font-size: 0.813px;
   color: #121212;
   opacity: 0.5;
   font-weight: 300;
   padding-bottom: 0.813rem;
-  
 }
 
 .ch-txt {
