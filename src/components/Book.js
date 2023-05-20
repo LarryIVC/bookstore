@@ -19,25 +19,49 @@ const Book = ({ data }) => {
   return (
     <>
       <div className="book">
-        <div>
-          <p>{category}</p>
-          <h2>{title}</h2>
-          <p>{author}</p>
-          <button type="button">Comments</button>
-          <button type="button" onClick={() => handleRemoveBook(item_id)}>
+        <div className="cnt-book-left">
+          <p className="category">{category}</p>
+          <h2 className="title">{title}</h2>
+          <p className="author">{author}</p>
+          <button
+            className="btn-book rb"
+            type="button"
+          >
+            Comments
+          </button>
+          <button
+            className="btn-book rb b2"
+            type="button"
+            onClick={handleRemoveBook}
+          >
             Remove
           </button>
-          <button type="button">Edit</button>
+          <button
+            className="btn-book b2"
+            type="button"
+          >
+            Edit
+          </button>
         </div>
-        <div>
-          <p>60</p>
-          <p>Completed</p>
+        <div className="cont-center">
+          <div className="progress" />
+          <div>
+            <p className="txt-pcnt">60%</p>
+            <p className="completed">Completed</p>
+          </div>
         </div>
-
-        <div>
-          <h3>CURRENT CHAPTER</h3>
-          <p>Chapter x</p>
-          <button type="button">UPDATE PROGRESS</button>
+        <div className="cont-book-right">
+          <h3 className="chapter">CURRENT CHAPTER</h3>
+          <p className="ch-txt">
+            Chapter_
+            {Math.floor(Math.random() * 91) + 10}
+          </p>
+          <button
+            type="button"
+            className="btn-updt"
+          >
+            UPDATE PROGRESS
+          </button>
         </div>
       </div>
     </>
