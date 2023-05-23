@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { fetchBooks, removeBook } from '../redux/books/booksSlice';
 import '../css/Book.css';
 
 const Book = ({ data }) => {
@@ -14,6 +14,7 @@ const Book = ({ data }) => {
   const dispatch = useDispatch();
   const handleRemoveBook = () => {
     dispatch(removeBook(item_id));
+    dispatch(fetchBooks());
   };
 
   return (
